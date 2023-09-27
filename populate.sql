@@ -45,9 +45,9 @@ CREATE TABLE scholarship (
 
 CREATE TABLE highschool (
     hs_id INT NOT NULL AUTO_INCREMENT,
-    hs_name VARCHAR(60),
-    hs_street VARCHAR(60),
-    hs_country VARCHAR(50),
+    hs_name VARCHAR(80),
+    hs_street VARCHAR(80),
+    hs_country VARCHAR(80),
     PRIMARY KEY(hs_id)
 );
 
@@ -77,6 +77,7 @@ CREATE TABLE college (
 );
 
 CREATE TABLE course (
+    crs_id INT NOT NULL AUTO_INCREMENT,
     crs_code VARCHAR(20) NOT NULL,
     crs_currver DATE,
     crs_name VARCHAR(60),
@@ -86,7 +87,7 @@ CREATE TABLE course (
     crs_type VARCHAR(30),
     crs_group VARCHAR(30),
     crs_instr VARCHAR(50),
-    PRIMARY KEY(crs_code)
+    PRIMARY KEY(crs_id)
 );
 
 CREATE TABLE year (
@@ -135,13 +136,13 @@ CREATE TABLE student (
 ----------------------------------------------------------------------------------------------------
 
 INSERT INTO bio (bio_fname, bio_mname, bio_lname, bio_gender, bio_bday) VALUES
-("Sandra", "Rodrigo", "Bullok", "Female", "13-Nov-80"),
-("Whammy", "Hieu", "Jackman", "Male", "2-Jan-02"),
-("Olivia", "Rodrigo", "Duterte", "Female", "13-Mar-90"),
-("Taylor", "Lautner", "Sheesh", "Non-Binary", "10-Jun-95"),
-("Zendaya", "Holland", "Park", "Female", "10-Sep-92"),
-("Zack", "Tabudlo", "Apron", "Male", "10-Dec-01"),
-("Ariana", "Falls", "Venti", "Female", "14-Feb-87");
+("Sandra", "Rodrigo", "Bullok", "Female", "1980-11-13"),
+("Whammy", "Hieu", "Jackman", "Male", "2002-01-02"),
+("Olivia", "Rodrigo", "Duterte", "Female", "1990-03-13"),
+("Taylor", "Lautner", "Sheesh", "Non-Binary", "1995-06-10"),
+("Zendaya", "Holland", "Park", "Female", "1992-09-10"),
+("Zack", "Tabudlo", "Apron", "Male", "2001-12-10"),
+("Ariana", "Falls", "Venti", "Female", "1987-02-14");
 
 INSERT INTO location (loc_street, loc_city, loc_country) VALUES
 ("Navarra Street", "Quezon City", "Philippines"),
@@ -182,8 +183,8 @@ INSERT INTO highschool (hs_name, hs_street, hs_country) VALUES
 ("International School of the National Artistic Arts University", "International Street", "Philippines");
 
 INSERT INTO admission (adm_year, adm_sem) VALUES
-("2001", 1),
-("2002", 1);
+("2001-01-01", 1),
+("2002-01-01", 1);
 
 INSERT INTO program (pgm_name, pgm_desc, pgm_units) VALUES
 ("Bachelor of Science in Computer Science", "Aims to provide knowledge in Computer Science", 37),
@@ -194,23 +195,23 @@ INSERT INTO college (coll_name, coll_building, coll_dean, coll_deptaff, coll_dep
 ("College of Science", "Main Building", "Apolinario Mabini", "Department of Physics", "Andres Bonifacio");
 
 INSERT INTO course (crs_currver, crs_code, crs_name, crs_units, crs_desc, crs_prereq, crs_type, crs_group, crs_instr) VALUES
-("1996", "CS110", "Theory of Computation", 3, "Studies the theory of computation", "CS109", "Lecture", "Professional", "Henry Yrneh"),
-("1996", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Albert Trebla"),
-("2001", "CS110", "Theory of Computation", 3, "Studies the theory of computation", "CS109", "Lecture", "Professional", "Henry Yrneh"),
-("2001", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Albert Trebla"),
-("2001", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Madeline Eniledam"),
-("1996", "PHYS112", "Quantum Mechanics", 3, "Studies quantum mechanics", "PHYS111", "Lecture", "Professional", "Albert Trebla"),
-("2001", "CS109", "Algorithms and Complexity", 3, "Studies algorithms and complexity", "CS108", "Lecture", "Professional", "Henry Yrneh"),
-("2001", "PE4", "Physical Education 4", 3, "Studies Physical Education", "PE3", "Laboratory", "General", "Albus Subla"),
-("2001", "RW2", "Works of Rizal", 3, "Studies the Works of Rizal", "RW1", "Lecture", "General", "Henry Yrneh"),
-("1996", "FIL23", "Filipino Literature", 3, "Studies Philippine Literature", "CS109", "Lecture", "General", "Josie Eisoj");
+("1996-01-01", "CS110", "Theory of Computation", 3, "Studies the theory of computation", "CS109", "Lecture", "Professional", "Henry Yrneh"),
+("1996-01-01", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Albert Trebla"),
+("2001-01-01", "CS110", "Theory of Computation", 3, "Studies the theory of computation", "CS109", "Lecture", "Professional", "Henry Yrneh"),
+("2001-01-01", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Albert Trebla"),
+("2001-01-01", "PHYS110", "Statistical Mechanics", 3, "Studies statistical mechanics", "PHYS109", "Laboratory", "Professional", "Madeline Eniledam"),
+("1996-01-01", "PHYS112", "Quantum Mechanics", 3, "Studies quantum mechanics", "PHYS111", "Lecture", "Professional", "Albert Trebla"),
+("2001-01-01", "CS109", "Algorithms and Complexity", 3, "Studies algorithms and complexity", "CS108", "Lecture", "Professional", "Henry Yrneh"),
+("2001-01-01", "PE4", "Physical Education 4", 3, "Studies Physical Education", "PE3", "Laboratory", "General", "Albus Subla"),
+("2001-01-01", "RW2", "Works of Rizal", 3, "Studies the Works of Rizal", "RW1", "Lecture", "General", "Henry Yrneh"),
+("1996-01-01", "FIL23", "Filipino Literature", 3, "Studies Philippine Literature", "CS109", "Lecture", "General", "Josie Eisoj");
 
 INSERT INTO year (year_sem, year_schyr) VALUES
-("1st Semester", "2002"),
-("2nd Semester", "2002"),
-("1st Semester", "2001"),
-("2nd Semester", "2001"),
-("2nd Semester", "2003");
+(1, "2002-01-01"),
+(2, "2002-01-01"),
+(1, "2001-01-01"),
+(2, "2001-01-01"),
+(2, "2003-01-01");
 
 INSERT INTO building (bldg_name, bldg_room) VALUES
 ("Blessed Pio Georgio Frassati", "Room A"),
