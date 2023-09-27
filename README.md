@@ -10,5 +10,20 @@ Chose the approach of creating a unique primary key for each record to remove th
 
 ### 3NF
 
-> have a consensus later
+> a combination of aly's 3nf and andy's 3nf
 
+split the original table into these entities
+- student
+- bio
+- location
+- application
+- family
+- scholarship
+- highschool
+- admission
+- program
+- college
+- course
+- year
+- building
+- tuition
