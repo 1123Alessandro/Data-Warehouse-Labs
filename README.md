@@ -82,6 +82,12 @@ Two views were created: (1) For joining the course and building tables and (2) F
 
 ![](images/q10.png)
 
+### 11. How many courses do each professor handle?
+
+A view was created using the DISTINCT keyword to eliminate duplicate values and be used as the basis for counting the courses each professor handles
+
+![](images/q11.png)
+
 ### 12. What is the average high school grade for each school?
 
 ![](images/q12.png)
