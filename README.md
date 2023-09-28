@@ -36,6 +36,12 @@ split the original table into these entities
 
 ![](images/q1.png)
 
+### 2. What is the average total school fees?
+
+> Using the SUM will add the various components of school fees and grouping it by Student ID will make it one row per student, and using the AVG will get the average total school fees in general
+
+![](images/q2.png)
+
 ### 3. How many students are enrolled per subject?
 
 ![](images/q3.png)

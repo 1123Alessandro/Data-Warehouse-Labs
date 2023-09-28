@@ -239,3 +239,5 @@ INSERT INTO student (bio_id, loc_id, stud_ees, app_id, fam_id, schlr_id, hs_id, 
 (7, 7, 92, 6, 7, 4, 3, 92, 1, 1, 1, 9, 4, 5, 1),
 (1, 1, 92, 1, 1, 1, 1, 92, 1, 1, 1, 10, 5, 5, 1),
 (2, 2, 77, 2, 2, 2, 1, 80, 1, 2, 2, 6, 3, 2, 2);
+
+SELECT * FROM course;
