@@ -63,3 +63,7 @@ The I.S.N.A.A.U. has a total of 4 unique students in the database
 ### 10. Whose family has the least amount of money left after paying total school fees?
 
 ![](images/q10.png)
+
+### 12. What is the average high school grade for each school?
+
+![](images/q12.png)
