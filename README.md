@@ -46,6 +46,10 @@ By using the `distinct` keyword to only get the courses that are connected to Ta
 
 ![](images/q4.png)
 
+### 6. What are the combinations of semester and school year?
+
+![](images/q6.png)
+
 ### 7. How many students does Intemational School of the National Artistic Arts University have?
 
 The I.S.N.A.A.U. has a total of 4 unique students in the database
