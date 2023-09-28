@@ -30,8 +30,14 @@ split the original table into these entities
 
 # Questions
 
-### What is the Average tuition fee
+### 1. What is the Average tuition fee
 
 > put some explanation here
 
 ![](images/q1.png)
+
+### 4. How many subjects does Taylor Sheesh have?
+
+By using the `distinct` keyword to only get the courses that are connected to Taylor Sheesh's bio_id, we can acquire the count
+
+![](images/q4.png)
