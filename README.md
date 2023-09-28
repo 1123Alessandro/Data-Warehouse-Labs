@@ -38,7 +38,7 @@ split the original table into these entities
 
 ### 2. What is the average total school fees?
 
-> Using the SUM will add the various components of school fees and grouping it by Student ID will make it one row per student, and using the AVG will get the average total school fees in general
+Using the SUM will add the various components of school fees and grouping it by Student ID will make it one row per student, and using the AVG will get the average total school fees in general
 
 ![](images/q2.png)
 
@@ -51,6 +51,12 @@ split the original table into these entities
 By using the `distinct` keyword to only get the courses that are connected to Taylor Sheesh's bio_id, we can acquire the count
 
 ![](images/q4.png)
+
+### 5. How many students have the same mother but different fathers?
+
+Doing a self-join on family table created two instances to check if they have the same mother but different fathers with the help of the DISTINCT keyword to help eliminate duplicates
+
+![](images/q5.png)
 
 ### 6. What are the combinations of semester and school year?
 
