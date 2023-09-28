@@ -36,6 +36,10 @@ split the original table into these entities
 
 ![](images/q1.png)
 
+### 3. How many students are enrolled per subject?
+
+![](images/q3.png)
+
 ### 4. How many subjects does Taylor Sheesh have?
 
 By using the `distinct` keyword to only get the courses that are connected to Taylor Sheesh's bio_id, we can acquire the count
