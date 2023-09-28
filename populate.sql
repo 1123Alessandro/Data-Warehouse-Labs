@@ -126,7 +126,8 @@ CREATE TABLE student (
     adm_id INT REFERENCES admission(adm_id),
     pgm_id INT REFERENCES program(pgm_id),
     coll_id INT REFERENCES college(coll_id),
-    crs_code VARCHAR(20) REFERENCES course(crs_code),
+    -- crs_code VARCHAR(20) REFERENCES course(crs_code),
+    crs_id INT REFERENCES course(crs_id),
     year_id INT REFERENCES year(year_id),
     bldg_id INT REFERENCES building(bldg_id),
     tui_id INT REFERENCES tuition(tui_id),
@@ -223,3 +224,18 @@ INSERT INTO building (bldg_name, bldg_room) VALUES
 INSERT INTO tuition (tui_fee, tui_misc, tui_lab, tui_ppu) VALUES
 (37000, 2500, 10000, 1000),
 (39000, 5000, 20000, 1000);
+
+INSERT INTO student (bio_id, loc_id, stud_ees, app_id, fam_id, schlr_id, hs_id, stud_hsg, adm_id, pgm_id, coll_id, crs_id, year_id, bldg_id, tui_id) VALUES
+(1, 1, 92, 1, 1, 1, 1, 92, 1, 1, 1, 1, 1, 1, 1),
+(2, 2, 77, 2, 2, 2, 1, 80, 1, 2, 2, 2, 2, 2, 2),
+(3, 3, 80, 3, 3, 3, 2, 98, 2, 1, 1, 3, 1, 1, 1),
+(4, 4, 84, 4, 4, 4, 3, 70, 2, 2, 2, 4, 2, 2, 2),
+(5, 5, 90, 5, 5, 4, 3, 75, 2, 1, 1, 3, 1, 1, 1),
+(6, 6, 95, 5, 6, 5, 1, 90, 2, 2, 2, 5, 2, 2, 2),
+(7, 7, 92, 6, 7, 4, 3, 92, 1, 1, 1, 3, 1, 1, 1),
+(2, 2, 77, 2, 2, 2, 1, 80, 1, 2, 2, 6, 3, 3, 2),
+(3, 3, 80, 3, 3, 3, 2, 98, 2, 1, 1, 7, 3, 1, 1),
+(6, 6, 95, 5, 6, 5, 1, 90, 2, 2, 2, 8, 4, 4, 2),
+(7, 7, 92, 6, 7, 4, 3, 92, 1, 1, 1, 9, 4, 5, 1),
+(1, 1, 92, 1, 1, 1, 1, 92, 1, 1, 1, 10, 5, 5, 1),
+(2, 2, 77, 2, 2, 2, 1, 80, 1, 2, 2, 6, 3, 2, 2);
