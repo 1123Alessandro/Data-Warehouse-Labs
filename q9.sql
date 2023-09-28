@@ -1,6 +1,3 @@
-create view scships as
-select * from scholarship group by schlr_name;
-
 create view scholared as
 select fam_id, schlr_id from student;
 
