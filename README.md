@@ -68,6 +68,12 @@ The I.S.N.A.A.U. has a total of 4 unique students in the database
 
 ![](images/q7.png)
 
+### 8. How many courses are held in all the buildings?
+
+Two views were created: (1) For joining the course and building tables and (2) For eliminating duplicates, then it counted the courses per building it is being held
+
+![](images/q8.png)
+
 ### 9. What is the average family income per scholarship?
 
 ![](images/q9.png)
