@@ -27,3 +27,11 @@ split the original table into these entities
 - year
 - building
 - tuition
+
+# Questions
+
+### What is the Average tuition fee
+
+> put some explanation here
+
+![](images/q1.png)
