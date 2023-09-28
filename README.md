@@ -56,6 +56,10 @@ The I.S.N.A.A.U. has a total of 4 unique students in the database
 
 ![](images/q7.png)
 
+### 9. What is the average family income per scholarship?
+
+![](images/q9.png)
+
 ### 10. Whose family has the least amount of money left after paying total school fees?
 
 ![](images/q10.png)
