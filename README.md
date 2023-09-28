@@ -41,3 +41,11 @@ split the original table into these entities
 By using the `distinct` keyword to only get the courses that are connected to Taylor Sheesh's bio_id, we can acquire the count
 
 ![](images/q4.png)
+
+### 7. How many students does Intemational School of the National Artistic Arts University have?
+
+The I.S.N.A.A.U. has a total of 4 unique students in the database
+
+![](images/q7.png)
+
+
