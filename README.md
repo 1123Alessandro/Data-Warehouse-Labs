@@ -1,8 +1,6 @@
 # Archived Version of Lab Exercise 1
 
-This branch is created as an orphan (i.e. all past commits are disregarded but all the files are transferred here) of the main branch upon finishing Lab Exercise #1. Do not touch this branch as it serves as the repository archive of the activity. 
-
-# Data-Warehouse-Labs
+This branch is created as an orphan (i.e. all past commits are disregarded but all the files are transferred here) of the main branch upon finishing Lab Exercise #1. **Do not touch this branch** as it serves as the repository archive of the activity.
 
 ### 1NF 
 
