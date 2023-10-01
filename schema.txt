@@ -1,0 +1,130 @@
+TABLE bio {
+    bio_id INT [primary key]
+    bio_fname VARCHAR
+    bio_mname VARCHAR
+    bio_lname VARCHAR
+    bio_gender VARCHAR
+    bio_bday DATE
+}
+
+TABLE location {
+    loc_id INT [primary key]
+    loc_street VARCHAR
+    loc_city VARCHAR
+    loc_country VARCHAR
+}
+
+TABLE application {
+    app_id INT [primary key]
+    app_fchoice VARCHAR
+    app_schoice VARCHAR
+}
+
+TABLE family {
+    fam_id INT [primary key]
+    fam_mother VARCHAR
+    fam_father VARCHAR
+    fam_income INT
+}
+
+TABLE scholarship {
+    schlr_id INT [primary key]
+    schlr_name VARCHAR
+    schlr_type VARCHAR
+}
+
+TABLE highschool {
+    hs_id INT [primary key]
+    hs_name VARCHAR
+    hs_street VARCHAR
+    hs_country VARCHAR
+}
+
+TABLE admission {
+    adm_id INT [primary key]
+    adm_year DATE
+    adm_sem INT
+}
+
+TABLE program {
+    pgm_id INT [primary key]
+    pgm_name VARCHAR
+    pgm_desc TEXT
+    pgm_units INT
+    PRIMARY KEY
+}
+
+TABLE college {
+    coll_id INT [primary key]
+    coll_name VARCHAR
+    coll_building VARCHAR
+    coll_dean VARCHAR
+    coll_deptaff VARCHAR
+    coll_deptchair VARCHAR
+}
+
+TABLE course {
+    crs_id INT [primary key]
+    crs_code VARCHAR
+    crs_currver DATE
+    crs_name VARCHAR
+    crs_units INT
+    crs_desc TEXT
+    crs_prereq VARCHAR
+    crs_type VARCHAR
+    crs_group VARCHAR
+    crs_instr VARCHAR
+}
+
+TABLE year {
+    year_id INT [primary key]
+    year_sem INT
+    year_schyr DATE
+}
+
+TABLE building {
+    bldg_id INT [primary key]
+    bldg_name VARCHAR
+    bldg_room VARCHAR
+}
+
+TABLE tuition {
+    tui_id INT [primary key]
+    tui_fee INT
+    tui_misc INT
+    tui_lab INT
+    tui_ppu INT
+}
+
+TABLE student {
+    stud_id INT [primary key]
+    stud_ees INT
+    stud_hsg INT
+    bio_id INT
+    loc_id INT
+    app_id INT
+    fam_id INT
+    schlr_id INT
+    hs_id INT
+    adm_id INT
+    pgm_id INT
+    coll_id INT
+    crs_id INT
+    year_id INT
+    bldg_id INT
+    tui_id INT
+}
+
+Ref: bio.bio_id < student.bio_id
+Ref: location.loc_id < student.loc_id
+Ref: application.app_id < student.app_id
+Ref: family.fam_id < student.fam_id
+Ref: scholarship.schlr_id < student.schlr_id
+Ref: highschool.hs_id < student.hs_id
+Ref: admission.adm_id < student.adm_id
+Ref: program.pgm_id < student.pgm_id
+Ref: college.coll_id < student.coll_id
+Ref: course.crs_id < student.crs_id
+Ref: year.year_id < student.year_id
+Ref: building.bldg_id < student.bldg_id
+Ref: tuition.tui_id < student.tui_id
