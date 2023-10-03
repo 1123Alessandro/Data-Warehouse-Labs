@@ -5,7 +5,7 @@ Come along with me~
 ![](images/treehouse.jpg)
 
 # TODO
-- [!] Dimensional Model
+- [ ] Dimensional Model
 - [ ] SQL Queries per question
 - [ ] Screenshot of query + output
 - [ ] write-up on thoughts and experience during lab exer 2
