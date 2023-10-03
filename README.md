@@ -1,9 +1,5 @@
 # Data-Warehouse-Labs
 
-Come along with me~
-
-![](images/treehouse.jpg)
-
 # TODO
 - [ ] Dimensional Model
 - [ ] SQL Queries per question
