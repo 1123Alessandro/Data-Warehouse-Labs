@@ -1,76 +1,76 @@
 TABLE student_enrollment_facts {
-    stud_id INT
-    adm_id INT
-    coll_id INT
-    crs_id INT
-    tui_id INT
+    stud_id INT [pk]
+    adm_id  INT [pk]
+    coll_id INT [pk]
+    crs_id  INT [pk]
+    tui_id  INT [pk]
 }
 
 TABLE student {
-    stud_id INT [primary key]
-    stud_fname VARCHAR
-    stud_mname VARCHAR
-    stud_lname VARCHAR
-    stud_gender VARCHAR
-    stud_bday DATE
-    stud_street VARCHAR
-    stud_city VARCHAR
-    stud_country VARCHAR
-    stud_ees INT
-    stud_app_fchoice VARCHAR
-    stud_app_schoice VARCHAR
-    stud_mother VARCHAR
-    stud_father VARCHAR
-    stud_fam_income INT
-    stud_schlr_name VARCHAR
-    stud_schlr_type VARCHAR
-    stud_hs_name VARCHAR
-    stud_hs_street VARCHAR
-    stud_hs_country VARCHAR
-    stud_hs_grade
+    stud_id             INT [primary key]
+    stud_fname          VARCHAR
+    stud_mname          VARCHAR
+    stud_lname          VARCHAR
+    stud_gender         VARCHAR
+    stud_bday           DATE
+    stud_street         VARCHAR
+    stud_city           VARCHAR
+    stud_country        VARCHAR
+    stud_ees            INT
+    stud_app_fchoice    VARCHAR
+    stud_app_schoice    VARCHAR
+    stud_mother         VARCHAR
+    stud_father         VARCHAR
+    stud_fam_income     INT
+    stud_schlr_name     VARCHAR
+    stud_schlr_type     VARCHAR
+    stud_hs_name        VARCHAR
+    stud_hs_street      VARCHAR
+    stud_hs_country     VARCHAR
+    stud_hs_grade       INT
 }
 
 TABLE admission {
-    adm_id INT [primary key]
-    adm_year DATE
-    adm_sem INT
-    adm_pgm_name VARCHAR
-    adm_pgm_desc TEXT
-    adm_pgm_units INT
+    adm_id          INT [primary key]
+    adm_year        DATE
+    adm_sem         INT
+    adm_pgm_name    VARCHAR
+    adm_pgm_desc    TEXT
+    adm_pgm_units   INT
 }
 
 TABLE college {
-    coll_id INT [primary key]
-    coll_name VARCHAR
-    coll_building VARCHAR
-    coll_dean VARCHAR
-    coll_deptaff VARCHAR
-    coll_deptchair VARCHAR
+    coll_id         INT [primary key]
+    coll_name       VARCHAR
+    coll_building   VARCHAR
+    coll_dean       VARCHAR
+    coll_deptaff    VARCHAR
+    coll_deptchair  VARCHAR
 }
 
 TABLE course {
-    crs_id INT [primary key]
-    crs_code VARCHAR
-    crs_currver DATE
-    crs_name VARCHAR
-    crs_units INT
-    crs_desc TEXT
-    crs_prereq VARCHAR
-    crs_type VARCHAR
-    crs_group VARCHAR
-    crs_instr VARCHAR
-    crs_sem INT
-    crs_schyr DATE
-    crs_bldg_name VARCHAR
-    crs_bldg_room VARCHAR
+    crs_id          INT [primary key]
+    crs_code        VARCHAR
+    crs_currver     DATE
+    crs_name        VARCHAR
+    crs_units       INT
+    crs_desc        TEXT
+    crs_prereq      VARCHAR
+    crs_type        VARCHAR
+    crs_group       VARCHAR
+    crs_instr       VARCHAR
+    crs_sem         INT
+    crs_schyr       DATE
+    crs_bldg_name   VARCHAR
+    crs_bldg_room   VARCHAR
 }
 
 TABLE tuition {
-    tui_id INT [primary key]
-    tui_fee INT
-    tui_misc INT
-    tui_lab INT
-    tui_ppu INT
+    tui_id      INT [primary key]
+    tui_fee     INT
+    tui_misc    INT
+    tui_lab     INT
+    tui_ppu     INT
 }
 
 Ref: student.stud_id < student_enrollment_facts.stud_id
