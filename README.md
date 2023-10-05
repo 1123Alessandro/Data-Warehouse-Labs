@@ -37,3 +37,9 @@ This counts the number of students who have same mothers but different fathers b
 Query the student table with a `WHERE` clause that only asks for students that have the ISNAA University in their records. 
 
 ![](images/q4.png)
+
+# 8. How many courses are held in all the buildings?
+
+This creates a view that selects the unique course code and building values from the course table using the DISTINCT keyword, and then it counts the number of courses that is grouped by the name of the building. 
+
+![](images/q8.png)
