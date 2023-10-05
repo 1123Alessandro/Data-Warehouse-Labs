@@ -1,0 +1,1 @@
+SELECT DISTINCT year_sem, year_schyr FROM year;

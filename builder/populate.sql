@@ -126,5 +126,3 @@ INSERT INTO enrollment (stud_id, adm_id, coll_id, crs_id, enr_tuition_fee, enr_m
 (7, 1, 1, 9, 37000, 2500, 10000, 1000),
 (1, 1, 1, 10, 37000, 2500, 10000, 1000),
 (2, 2, 2, 11, 39000, 5000, 20000, 1000);
-
-select * from student;
