@@ -19,3 +19,9 @@ Group by the enrollment records' college ID. Querying for the average should sim
 Create a view for Taylor's information. This view's `stud_id` serves as the filter for the query in the enrollment table.
 
 ![](images/q4.png)
+
+# 7. How many students does International School of the National Artistic Arts University have?
+
+Query the student table with a `WHERE` clause that only asks for students that have the ISNAA University in their records. 
+
+![](images/q4.png)
