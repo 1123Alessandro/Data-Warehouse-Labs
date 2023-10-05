@@ -22,7 +22,7 @@ This directly adds all of the facts in the fact table since those refer to the s
 
 # 3. How many students are enrolled per subject?
 
-Create a `VIEW` to `COUNT` the number of enrolled students for each unique course. Use `SUM` to add the total number of enrolled students per unique course, including different course versions.
+Retrieve the number of students enrolled in each subject by joining the `course` and `enrollment` tables based on the course ID. `GROUP` the results by course name and `COUNT` the distinct student IDs to determine how many students are enrolled in each subject. The results are sorted in descending order using `DESC` to show the subjects with the highest enrollment first.
 
 ![](images/q3.png)
 
