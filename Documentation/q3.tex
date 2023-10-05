@@ -2,21 +2,17 @@
     How many students are enrolled per subject?
 }
 
-Create a `VIEW` to `COUNT` the number of enrolled students for each unique course. Use `SUM` to add the total number of enrolled students per unique course, including different course versions.
+Retrieve the number of students enrolled in each subject by joining the \texttt{course} and \texttt{enrollment} tables based on the course ID. \texttt{GROUP} the results by course name and \texttt{COUNT} the distinct student IDs to determine how many students are enrolled in each subject. The results are sorted in descending order using \texttt{DESC} to show the subjects with the highest enrollment first.
 \vspace{\baselineskip}
 
 \sol{}
 \noindent\line(1, 0){0.89\linewidth}
 \begin{verbatim}
-CREATE VIEW stude_per_course AS
-SELECT c.crs_code, c.crs_name, COUNT(DISTINCT s.stud_id) AS enrolled_students_count
+SELECT c.crs_name AS Subject, COUNT(DISTINCT e.stud_id) AS Number_of_Students
 FROM course c
-LEFT JOIN student s ON c.crs_id = s.crs_id
-GROUP BY c.crs_code, c.crs_name;
-
-SELECT stu.crs_code, stu.crs_name, SUM(stu.enrolled_students_count) AS total_enrolled_students_count
-FROM stu_per_course stu
-GROUP BY stu.crs_code, stu.crs_name;
+LEFT JOIN enrollment e ON c.crs_id = e.crs_id
+GROUP BY c.crs_name
+ORDER BY Number_of_Students DESC;
 \end{verbatim}
 \noindent\line(1, 0){\linewidth}
 

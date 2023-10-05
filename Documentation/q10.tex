@@ -15,7 +15,8 @@ the \texttt{courseTotals} aggregates all the price of the courses taken by each 
 \begin{verbatim}
 create view base as
 select en.stud_id, en.crs_id, (en.enr_tuition_fee + en.enr_misc_fee + en.enr_lab_fee)
-as mainPrice, (en.enr_ppu * course.crs_units) as coursePrice, student.stud_fam_income as income from enrollment en
+as mainPrice, (en.enr_ppu * course.crs_units) as coursePrice, student.stud_fam_income
+as income from enrollment en
 join course on en.crs_id = course.crs_id
 join student on en.stud_id = student.stud_id
 group by en.crs_id;
