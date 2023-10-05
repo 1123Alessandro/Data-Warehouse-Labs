@@ -26,6 +26,12 @@ Create a view for Taylor's information. This view's `stud_id` serves as the filt
 
 ![](images/q4.png)
 
+# 6. What are the combinations of semester and school year?
+
+Using `DISTINCT` selects distinct values of `year_sem` and `year_schyr` from the `year` table, giving you the unique combinations of semester and school year.
+
+![](images/q6.png)
+
 # 7. How many students does International School of the National Artistic Arts University have?
 
 Query the student table with a `WHERE` clause that only asks for students that have the ISNAA University in their records. 
