@@ -26,6 +26,12 @@ Create a view for Taylor's information. This view's `stud_id` serves as the filt
 
 ![](images/q4.png)
 
+# 5. How many students have the same mother but different fathers?
+
+This counts the number of students who have same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
+
+![](images/q5.png)
+
 # 7. How many students does International School of the National Artistic Arts University have?
 
 Query the student table with a `WHERE` clause that only asks for students that have the ISNAA University in their records. 
