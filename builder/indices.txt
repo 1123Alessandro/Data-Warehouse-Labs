@@ -1,0 +1,47 @@
+0       First Name
+1       Middle Name
+2       Last Name
+3       Gender
+4       Birthdate
+5       Street Address
+6       City
+7       Country
+8       Extrance Exam Score
+9       First Degree Choice
+10      Second Degree Choice
+11      Mother's Maiden Name
+12      Father's Name
+13      Annual Family Income
+14      Scholarship Name
+15      Scholarship Type
+16      High School Name
+17      High School Street Address
+18      High School Country
+19      High School Grade
+20      Admission School Year
+21      Admission Semester
+22      Program Name
+23      Program Description
+24      Program Units
+25      College Name
+26      College Building
+27      College Dean Name
+28      Department Affiliation
+29      Department Chair Name
+30      Curriculum Version
+31      Course Code
+32      Course Name
+33      Course Units
+34      Course Description
+35      Course Prerequisites
+36      Course Type
+37      Course Group
+38      Course Instructor
+39      Semester
+40      School Year
+41      Building
+42      Room
+43      Tuition Fee
+44      Miscellaneous Fees
+45      Laboratory Fees
+46      Price per Unit
