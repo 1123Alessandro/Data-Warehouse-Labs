@@ -8,11 +8,17 @@
 - [ ] Discuss the difference in terms of querying in Lab Exercise #1 vs. Lab Exercise #2
 - [ ] SQL Scripts (one file per question)
 
-# 1. What is the average tuition fee
+# 1. What is the average tuition fee?
 
 Group by the enrollment records' college ID. Querying for the average should simply follow.
 
 ![](images/q1.png)
+
+# 2. What is the average total school fees?
+
+This directly adds all of the facts in the fact table since those refer to the school fees and then simply get the average of the sum.
+
+![](images/q2.png)
 
 # 4. How many subjects does Taylor Sheesh have?
 
