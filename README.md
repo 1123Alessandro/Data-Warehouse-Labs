@@ -34,7 +34,7 @@ Query the student table with a `WHERE` clause that only asks for students that h
 
 # 9. What is the average family income per scholarship?
 
-Calculate the average family income per scholarship by first selecting `DISTINCT` scholarship names from the `student` table. Then, calculate the average (denoted as `AVG`) family income for each scholarship and present the results in descending (denoted as `DESC`) order of average family income.
+Calculate the average family income per scholarship by first selecting `DISTINCT` scholarship names from the `student` table. Using `AVG()`, calculate the average family income for each scholarship and present the results in descending (denoted as `DESC`) order of average family income.
 
 ![](images/q9.png)
 
