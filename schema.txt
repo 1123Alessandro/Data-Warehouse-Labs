@@ -3,7 +3,10 @@ TABLE student_enrollment_facts {
     adm_id  INT [pk]
     coll_id INT [pk]
     crs_id  INT [pk]
-    tui_id  INT [pk]
+    tuition_fee INT
+    misc_fees INT
+    lab_fees INT
+    price_per_unit INT
 }
 
 TABLE student {
@@ -65,16 +68,7 @@ TABLE course {
     crs_bldg_room   VARCHAR
 }
 
-TABLE tuition {
-    tui_id      INT [primary key]
-    tui_fee     INT
-    tui_misc    INT
-    tui_lab     INT
-    tui_ppu     INT
-}
-
 Ref: student.stud_id < student_enrollment_facts.stud_id
 Ref: admission.adm_id < student_enrollment_facts.adm_id
 Ref: college.coll_id < student_enrollment_facts.coll_id
 Ref: course.crs_id < student_enrollment_facts.crs_id
-Ref: tuition.tui_id < student_enrollment_facts.tui_id
