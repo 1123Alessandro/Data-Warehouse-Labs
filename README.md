@@ -25,3 +25,13 @@ Create a view for Taylor's information. This view's `stud_id` serves as the filt
 Query the student table with a `WHERE` clause that only asks for students that have the ISNAA University in their records. 
 
 ![](images/q4.png)
+
+# 10. Whose family has the least amount of money left after paying total school fees?
+
+The base `view` serves as the central hub of all the information needed. It has the main price of their tuition fee, including miscellaneous and laboratory fees, the price of their course given that it's been multiplied to the price per unit of their college, as well as the income of their family.
+
+the `courseTotals` aggregates all the price of the courses taken by each student, the `sum()` function was grouped accordign to the `stud_id` of each row. 
+
+`deducts` then calculates the total deductions and the remaining money of each family in the record. In this view, querying for the least amount of money left is possible by using the `min()` function to match the lowest record.
+
+![](images/q10.png)
