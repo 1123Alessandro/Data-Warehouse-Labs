@@ -28,7 +28,7 @@ Create a view for Taylor's information. This view's `stud_id` serves as the filt
 
 # 5. How many students have the same mother but different fathers?
 
-This counts the number of students who have same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
+This counts the number of students with the same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
 
 ![](images/q5.png)
 
@@ -40,6 +40,12 @@ Query the student table with a `WHERE` clause that only asks for students that h
 
 # 8. How many courses are held in all the buildings?
 
-This creates a view that selects the unique course code and building values from the course table using the DISTINCT keyword, and then it counts the number of courses that is grouped by the name of the building. 
+This creates a view that selects the unique course code and building values from the course table using the DISTINCT keyword and then counts the number of courses grouped by the name of the building. 
 
 ![](images/q8.png)
+
+# 11. How many courses do each professor handle?
+
+This counts uniquely the courses they handle, which are grouped according to the professor's name from the course table.
+
+![](images/q11.png)
