@@ -1,9 +1,5 @@
-CREATE VIEW stude_per_course AS
-SELECT c.crs_code, c.crs_name, COUNT(DISTINCT s.stud_id) AS enrolled_students_count
+SELECT c.crs_name AS Subject, COUNT(DISTINCT e.stud_id) AS Number_of_Students
 FROM course c
-LEFT JOIN student s ON c.crs_id = s.crs_id
-GROUP BY c.crs_code, c.crs_name;
-
-SELECT stu.crs_code, stu.crs_name, SUM(stu.enrolled_students_count) AS total_enrolled_students_count
-FROM stu_per_course stu
-GROUP BY stu.crs_code, stu.crs_name;
+LEFT JOIN enrollment e ON c.crs_id = e.crs_id
+GROUP BY c.crs_name
+ORDER BY Number_of_Students DESC;
