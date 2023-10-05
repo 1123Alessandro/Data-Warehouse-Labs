@@ -8,11 +8,17 @@
 - [ ] Discuss the difference in terms of querying in Lab Exercise #1 vs. Lab Exercise #2
 - [ ] SQL Scripts (one file per question)
 
-# 1. What is the average tuition fee
+# 1. What is the average tuition fee?
 
 Group by the enrollment records' college ID. Querying for the average should simply follow.
 
 ![](images/q1.png)
+
+# 2. What is the average total school fees?
+
+This directly adds all of the facts in the fact table since those refer to the school fees and then simply get the average of the sum.
+
+![](images/q2.png)
 
 # 3. How many students are enrolled per subject?
 
@@ -25,6 +31,12 @@ Create a `VIEW` to `COUNT` the number of enrolled students for each unique cours
 Create a view for Taylor's information. This view's `stud_id` serves as the filter for the query in the enrollment table.
 
 ![](images/q4.png)
+
+# 5. How many students have the same mother but different fathers?
+
+This counts the number of students who have same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
+
+![](images/q5.png)
 
 # 6. What are the combinations of semester and school year?
 
