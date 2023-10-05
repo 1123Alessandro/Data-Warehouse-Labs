@@ -14,6 +14,12 @@ Group by the enrollment records' college ID. Querying for the average should sim
 
 ![](images/q1.png)
 
+# 3. How many students are enrolled per subject?
+
+Create a `VIEW` to `COUNT` the number of enrolled students for each unique course. Use `SUM` to add the total number of enrolled students per unique course, including different course versions.
+
+![](images/q3.png)
+
 # 4. How many subjects does Taylor Sheesh have?
 
 Create a view for Taylor's information. This view's `stud_id` serves as the filter for the query in the enrollment table.
