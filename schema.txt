@@ -1,12 +1,13 @@
 TABLE student_enrollment_facts {
-    stud_id INT [pk]
-    adm_id  INT [pk]
-    coll_id INT [pk]
-    crs_id  INT [pk]
-    tuition_fee INT
-    misc_fees INT
-    lab_fees INT
-    price_per_unit INT
+    stud_id         INT [pk]
+    adm_id          INT [pk]
+    coll_id         INT [pk]
+    crs_id          INT [pk]
+    tuition_fee     INT
+    misc_fees       INT
+    lab_fees        INT
+    price_per_unit  INT
+    course_price    FLOAT
 }
 
 TABLE student {
