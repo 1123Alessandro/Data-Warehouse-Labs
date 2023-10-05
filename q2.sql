@@ -1,0 +1,1 @@
+SELECT AVG(enr_tuition_fee + enr_misc_fee + enr_lab_fee + enr_ppu) AS "Average Total School Fees" FROM enrollment;
