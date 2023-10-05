@@ -40,7 +40,7 @@ This counts the number of students with the same mothers but different fathers b
 
 # 6. What are the combinations of semester and school year?
 
-Using `DISTINCT` selects distinct values of `year_sem` and `year_schyr` from the `year` table, giving you the unique combinations of semester and school year.
+Retrieve `DISTINCT` combinations of academic semesters (referred to as `adm_sem`) and the corresponding formatted admission years (as `school_year`) from the `admission` table. `ORDER` the results first by the school year and then by the academic semester, ensuring that the output is sorted in ascending order based on the school year and within the same year by academic semester.
 
 ![](images/q6.png)
 
