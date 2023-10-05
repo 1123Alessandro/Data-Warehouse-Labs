@@ -77,3 +77,9 @@ the `courseTotals` aggregates all the price of the courses taken by each student
 This counts uniquely the courses they handle, which are grouped according to the professor's name from the course table.
 
 ![](images/q11.png)
+
+# 12. What is the average high school grade for each school?
+
+Calculate the average high school grade for each school by selecting `DISTINCT` school names from the `student` table. Compute the average of high school grades associated with each school using `AVG()`. Sort the results in descending order based on the average high school grade using `DESC`.
+
+![](images/q12.png)
