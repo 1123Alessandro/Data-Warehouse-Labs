@@ -13,3 +13,9 @@
 Group by the enrollment records' college ID. Querying for the average should simply follow.
 
 ![](images/q1.png)
+
+# 4. How many subjects does Taylor Sheesh have?
+
+Create a view for Taylor's information. This view's `stud_id` serves as the filter for the query in the enrollment table.
+
+![](images/q4.png)
