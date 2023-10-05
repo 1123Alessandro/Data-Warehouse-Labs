@@ -34,13 +34,13 @@ Create a view for Taylor's information. This view's `stud_id` serves as the filt
 
 # 5. How many students have the same mother but different fathers?
 
-This counts the number of students who have same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
+This counts the number of students with the same mothers but different fathers by joining and comparing two student tables, and the DISTINCT keyword also ensures that each student is counted only once.
 
 ![](images/q5.png)
 
 # 6. What are the combinations of semester and school year?
 
-Using `DISTINCT` selects distinct values of `year_sem` and `year_schyr` from the `year` table, giving you the unique combinations of semester and school year.
+Retrieve `DISTINCT` combinations of academic semesters (referred to as `adm_sem`) and the corresponding formatted admission years (as `school_year`) from the `admission` table. `ORDER` the results first by the school year and then by the academic semester, ensuring that the output is sorted in ascending order based on the school year and within the same year by academic semester.
 
 ![](images/q6.png)
 
@@ -50,12 +50,17 @@ Query the student table with a `WHERE` clause that only asks for students that h
 
 ![](images/q4.png)
 
-
 # 8. How many courses are held in all the buildings?
 
-This creates a view that selects the unique course code and building values from the course table using the DISTINCT keyword, and then it counts the number of courses that is grouped by the name of the building. 
+This creates a view that selects the unique course code and building values from the course table using the DISTINCT keyword and then counts the number of courses grouped by the name of the building. 
 
 ![](images/q8.png)
+
+# 9. What is the average family income per scholarship?
+
+Calculate the average family income per scholarship by first selecting `DISTINCT` scholarship names from the `student` table. Using `AVG()`, calculate the average family income for each scholarship and present the results in descending (denoted as `DESC`) order of average family income.
+
+![](images/q9.png)
 
 # 10. Whose family has the least amount of money left after paying total school fees?
 
@@ -66,3 +71,15 @@ the `courseTotals` aggregates all the price of the courses taken by each student
 `deducts` then calculates the total deductions and the remaining money of each family in the record. In this view, querying for the least amount of money left is possible by using the `min()` function to match the lowest record.
 
 ![](images/q10.png)
+
+# 11. How many courses do each professor handle?
+
+This counts uniquely the courses they handle, which are grouped according to the professor's name from the course table.
+
+![](images/q11.png)
+
+# 12. What is the average high school grade for each school?
+
+Calculate the average high school grade for each school by selecting `DISTINCT` school names from the `student` table. Compute the average of high school grades associated with each school using `AVG()`. Sort the results in descending order based on the average high school grade using `DESC`.
+
+![](images/q12.png)
